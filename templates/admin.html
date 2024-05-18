@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Galery</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Gowun Dodum', sans-serif;
+            }
+
+            .mytitle {
+                width: 100%;
+                height: 250px;
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+                background-position: center;
+                background-size: cover;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .mytitle>button {
+                width: 200px;
+                height: 50px;
+                background-color: transparent;
+                color: white;
+                border-radius: 50px;
+                border: 1px solid white;
+                margin-top: 10px;
+            }
+
+            .mytitle>button:hover {
+                border: 2px solid white;
+            }
+
+            .mycomment {
+                color: gray;
+            }
+
+            .mycards {
+                margin: 20px auto 0px auto;
+                width: 95%;
+                max-width: 1200px;
+            }
+
+            .mypost {
+                width: 95%;
+                max-width: 500px;
+                margin: 20px auto 10px auto;
+                padding: 20px;
+                box-shadow: 0px 0px 3px 0px gray;
+            }
+
+            .mybtns {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .mybtns>button {
+                margin-right: 10px;
+            }
+
+            .card-img-top {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                // listing();
+            });
+
+            function listing() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/galery',
+                    success: function (response) {
+                        let rows = response['galery'];
+                        for (let i = 0; i < rows.length; i++) {
+                            let image = rows[i]['image'];
+                            let description = rows[i]['description'];
+                            let id = rows[i]['_id'];
+                            let temp_html = `
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="${image}" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">${description}</p>
+                                        <p class="card-text">${id}</p>
+                                    </div>
+                                    <div>
+                                <button onclick="updateData(${id})" type="button" class="btn btn-dark">Update</button>
+                                <button onclick="deleteData(${id})" type="button" class="btn btn-red">Delete</button>
+
+                                
+                            </div>
+                                </div>
+                            </div> 
+                        `;
+                            $('#cards-box').append(temp_html);
+                        }
+                    }
+                })
+            }
+
+            function posting() {
+                let formData = new FormData();
+                let fileInput = document.getElementById('image');
+                formData.append('image', fileInput.files[0]);
+                formData.append('description', $('#description').val());
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/galery',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        alert(response['msg'])
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function deleteData(id) {
+                if (confirm('Apakah Anda yakin ingin menghapus data ini?')) {
+                    fetch(`/galery/delete/${id}`, {
+                        method: 'DELETE'
+                    }).then(response => response.json())
+                        .then(data => {
+                            alert(data.msg);
+                            document.getElementById(`item${id}`).remove();
+                            window.location.reload();
+                        }).catch(error => {
+                            console.error('Error:', error);
+                        });
+                }
+            }
+
+            function updateData(id) {
+                if (confirm('Apakah Anda yakin ingin mengupdate data ini?')) {
+                    let formData = new FormData();
+                    let fileInput = document.getElementById('image');
+                    formData.append('image', fileInput.files[0]);
+                    formData.append('description', $('#description').val());
+                    fetch(`/galery/update/${id}`, {
+                        method: 'POST',
+                        body: formData
+                    }).then(response => response.json())
+                        .then(data => {
+                            alert(data.msg);
+                            window.location.reload();
+                        }).catch(error => {
+                            console.error('Error:', error);
+                        });
+                }
+            }
+
+
+
+            function deleteButton(url) {
+                if (confirm('Apakah Anda yakin ingin menghapus data ini?'))
+                    window.location.href = url
+            }
+
+            function open_box() {
+                $('#post-box').show()
+            }
+
+            function close_box() {
+                $('#post-box').hide()
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="mytitle">
+            <h1>Data Galery</h1>
+            <button onclick="open_box()">Save Galery</button>
+        </div>
+        <div class="mypost" id="post-box">
+            <div class="form-floating mb-3">
+                <input id="image" type="file" class="form-control" placeholder="Gambar URL">
+                <label>Pilih Gambar</label>
+            </div>
+            <div class="form-floating">
+                <textarea id="description" class="form-control" placeholder="Deskripsi"></textarea>
+                <label for="description">Deskripsi</label>
+            </div>
+            <div class="mybtns">
+                <button onclick="posting()" type="button" class="btn btn-dark">Save</button>
+                <button onclick="close_box()" type="button" class="btn btn-outline-dark">Close</button>
+            </div>
+        </div>
+        <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="cards-box">
+                {%for data in galery %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{{data.image}}" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">{{data.description}}</p>
+                            <p class="card-text">{{data._id}}</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                                data-bs-target="#updateModal{{data['_id']}}">
+                                Update
+                            </button>
+                            <button onclick='deleteButton("/galery/delete/{{data['_id']}}")' type="button"
+                                class="btn btn-red">Delete</button>
+
+                            <div class="modal fade" id="updateModal{{data['_id']}}" tabindex="-1" aria-labelledby="updateModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="updateModalLabel">Update Gambar</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <form action="/galery/update/{{data['_id']}}" method="post" enctype="multipart/form-data">
+                                            <div class="modal-body">
+                                                <div class="form-floating mb-3">
+                                                    <input id="imagemodal" type="file" class="form-control" placeholder="Gambar URL" name="imagemodal">
+                                                    <label for="imagemodal">Pilih Gambar</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <textarea id="description" class="form-control" placeholder="Deskripsi" name="description"></textarea>
+                                                    <label for="description">Deskripsi</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </body>
+
+</html>

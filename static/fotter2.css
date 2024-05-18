@@ -1,0 +1,172 @@
+.fotter2{
+    width: 1363px;
+    height: 380px;
+    background: rgba(33, 37, 41, 1);
+    padding: 3px;
+    color: white;
+}
+.fotter2>.judul-fotter{
+    width: 280px;
+    left: 19px;
+    position: absolute;
+    font-size: 25px;
+    top: 3343px;
+}
+.item-fotter{
+    width: 200px;
+    position: absolute;
+}
+.fotter-beranda{
+    width: 66px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.fotter-profile{
+    width: 66px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 100px;
+    left: 500px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.fotter-galery{
+    width: 66px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 100px;
+    left: 600px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.fotter-smk{
+    width: 66px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 100px;
+    left: 700px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.fotter-osis{
+    width: 66px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 100px;
+    left: 800px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.fotter-kontak{
+    width: 180px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 100px;
+    left: 875px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+hr{
+    width: 1095px;
+    position: relative;
+    top: 166px;
+    left: 150px;
+}
+.fotter-service{
+    width: 180px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 3555px;
+    left: 68px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.fotter-privacy{
+    width: 180px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    cursor: pointer;
+    top: 3555px;
+    left: 200px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.icont-fb{
+    width: 200px;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    top: 3555px;
+    left: 450px;
+}
+.icont-ig{
+    width: 200px;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    top: 3555px;
+    left: 555px;
+}
+.icont-yt{
+    width: 200px;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    top: 3555px;
+    left: 655px;
+}
+.fotter-copyright{
+    width: 400px;
+    color: rgba(108, 117, 125, 1);
+    position: absolute;
+    top: 3555px;
+    right: 14px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: right;
+}
+.judul-fotter{
+    width: 290px;
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    top: 126px;
+    left: 38px;
+}

@@ -1,0 +1,238 @@
+.gnb1 {
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    color: white;
+    height: 804px;
+    width: 1363px;
+}
+i{  
+    font-style: normal;
+}
+.top {
+    width: 1400px;
+    margin: auto;
+    justify-content: flex-end;
+
+}
+.top>.left>li:hover {
+    border: 1px solid black;
+}
+
+.bottom>img {
+    width: 500px;
+    top: 80px;
+    left: 1200px;
+    position: absolute;
+}
+
+
+.top {
+    margin-bottom: 20px;
+}
+
+.top>.left>.profile-page {
+    margin-right: 25px;
+    cursor: pointer;
+    height: 39px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+
+.top>.left>li {
+    margin-right: 25px;
+    font-family: Saira Stencil One;
+    height: 39px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px white solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+
+.top>.right>li {
+    margin-right: 10px;
+}
+
+.left {
+    margin-left: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.right>li>i>img {
+    width: 45px;
+    height: 45px;
+    left: 981px;
+    top: 24px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    display: inline-flex
+}
+
+.right2>li>i>img {
+    width: 60px;
+    height: 60px;
+    left: 1130px;
+    top: 14px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    display: inline-flex
+}
+
+.right3>li>i>img {
+    width: 95px;
+    height: 75px;
+    left: 1035px;
+    top: 14px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    display: inline-flex
+}
+
+.text {
+    width: 959px;
+    height: 71px;
+    left: 42px;
+    top: 126px;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+
+
+.deskripsi1 {
+    width: 139px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+}
+.deskripsi2 {
+    width: 586px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 272px;
+    left: 43px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+}
+.bottom01>img{
+    width: 252px;
+    height: 254px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 336px;
+    left: 325px;
+    overflow: hidden;
+}
+.bottom02>img{
+    width: 222px;
+    height: 224px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 358px;
+    left: 839px;
+    overflow: hidden;
+}
+.bottom01,.bottom02{
+    background-color: rgba(173, 57, 60, 1);
+    background-size: 1200px;
+}
+.button01{
+    width: 200px;
+    font-size: 30px;
+    top: 170px;
+    left: 600px;
+    position: absolute;
+    border: 1px white solid;
+    border-radius: 15px;
+    padding: 9px;
+    background-color: rgba(233, 38, 44, 1);
+}
+.button03{
+    width: 205px;
+    font-size: 30px;
+    left: 320px;
+    padding: 5px;
+    top: 632px;
+    position: absolute;
+    border: 1px white solid;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(233, 38, 44, 1);
+}
+.button05{
+    width: 140px;
+    font-size: 30px;
+    left: 885px;
+    top: 632px;
+    position: absolute;
+    border: 1px white solid;
+    border-radius: 15px;
+    padding: 9px;
+    background-color: rgba(233, 38, 44, 1);
+}
+.button07{
+    width: 290px;
+    position: absolute;
+    left: 55px;
+    font-size: 31px;
+    font-family:  Saira Stencil One;
+}
+.text-profile{
+    background-color: white;
+    top: 890;
+    width: 1090px;
+    margin: 12px;
+    left: 24px;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    color: rgba(173, 57, 61, 1);
+    font-family: Saira Stencil One;
+
+}
+.text-01{
+    font-size: 90px;
+    border-color: 1px black solid;
+}
+.text-02{
+    font-size: 90px;
+}
+.text-desk1{
+    font-size: 50px;
+}

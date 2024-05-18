@@ -1,0 +1,294 @@
+.activity {
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    height: 750px;
+    margin: auto;
+    color: white;
+    width: 1363px
+}
+
+.activity>.text1 {
+    width: 600px;
+    height: 120px;
+    display: flex;
+    font-size: 51px;
+    font-family: Saira Stencil One;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 1510px;
+    left: 42px;
+    font-weight: Regular;
+    opacity: 1;
+    text-align: left;
+}
+
+.activity>.picture>li>img:first-child {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    right: 70px;
+    top: 1240px;
+    text-align: right;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.activity>.picture1>li>img {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    right: 490px;
+    top: 1240px;
+    text-align: right;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+}
+
+.activity>.picture2>li>img {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    right: 70px;
+    top: 1590px;
+    text-align: right;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.activity>.picture3>li>img {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    right: 490px;
+    top: 1590px;
+    text-align: right;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.button:hover {
+    border: 2px solid black;
+}
+
+.button {
+    width: 436px;
+    height: 39px;
+    background: rgba(173, 57, 60, 1);
+    padding: 10px 10px;
+    margin: 25px;
+    opacity: 1;
+    cursor: pointer;
+    position: static;
+    top: 1995px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.button>.button1 {
+    width: 104px;
+    color: rgba(245, 238, 238, 1);
+    position: absolute;
+    top: 1960px;
+    left: 577px;
+    font-family: Saira Stencil One;
+    font-weight: Regular;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+}
+.program{
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    height: 600px;
+    margin: auto;
+    color: white;
+    width: 1363px;
+}
+.program>.judul-program{
+    width: 245px;
+    height: 50px;
+    border: 1px white solid;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 10px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 3400px;
+    left: 512px;
+    font-size: 25px;
+    font-weight: 45px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.program>.program1{
+    width: 477px;
+    height: 258px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    color: black;
+    top: 3600px;
+    right: 26px;
+    border: 1px black solid rgba(0, 0, 0, 1);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.program>.program2{
+    width: 477px;
+    height: 258px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    color: black;
+    top: 3600px;
+    left: 34px;
+    border: 1px black solid rgba(0, 0, 0, 1);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.judul-anggota01{
+    width: 450px;
+    height: 20px;
+    font-size: 25px;
+    font-family: Saira Stencil One;
+    color:  rgba(173, 57, 61, 1);
+    position: absolute;
+    left: 43px;
+    top: 566px;
+}
+.anggota-identitas01{
+    width: 1200px;
+    height: 70px;
+    position: absolute;
+    justify-content: center;
+    top: 651px;
+    left: 80px;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.anggota-identitas02{
+    width: 1200px;
+    height: 70px;
+    position: absolute;
+    justify-content: center;
+    top: 1040px;
+    left: 80px;
+    font-family: roboto;
+    font-weight: bold;
+}
+.kegiatan01{
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    height: 550px;
+    margin-top: 950px;
+    margin-bottom: 125px;
+    color: white;
+    width: 1363px;
+    top: 150px;
+}
+.judul1 {
+    width: 959px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 1515px;
+    left: 42px;
+    font-family: Saira Stencil One;
+    font-weight: Regular;
+    font-size: 31px;
+    opacity: 1;
+    text-align: left;
+}
+.alamat3 {
+    width: 626px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 1599px;
+    left: 43px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+.deskripsi4 {
+    width: 586px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 1642px;
+    left: 55px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: left;
+}
+.judul-kegiatan01{
+    width: 450px;
+    height: 20px;
+    font-size: 25px;
+    font-family: Saira Stencil One;
+    color:  rgba(173, 57, 61, 1);
+    position: absolute;
+    left: 43px;
+    top: 2039px;
+}
+.kegiatan-osis{
+    width: 500px;
+    height: 300px;
+}
+.kegiatan-osis>img{
+    width: 300px;
+    height: 100px;
+}
+.kegiatan-osis01{
+    position: absolute;
+    top: 2221px;
+    left: 139px;
+    width: 500px;
+    height: 300px;
+}
+.kegiatan-osis02{
+    position: absolute;
+    top: 2525px;
+    left: 139px;
+}
+.kegiatan-osis03{
+    position: absolute;
+    top: 2828px;
+    left: 139px;
+}

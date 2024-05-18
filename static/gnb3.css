@@ -1,0 +1,449 @@
+.gnb3 {
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    color: white;
+    height: 468px;
+    width: 1366px;
+}
+i{  
+    font-style: normal;
+}
+.top {
+    width: 100%;
+    margin: auto;
+    justify-content: flex-end;
+
+}
+.top>.left>li:hover {
+    border: 1px solid black;
+}
+
+.bottom>img {
+    width: 240px;
+    top: 80px;
+    left: 944px;
+    position: absolute;
+}
+
+
+.top {
+    margin-bottom: 20px;
+}
+
+.top>.left>.tentang-smk {
+    margin-right: 25px;
+    cursor: pointer;
+    height: 39px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+.top>.left>.tentang-osis {
+    margin-right: 25px;
+    cursor: pointer;
+    height: 39px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+
+.top>.left>li {
+    margin-right: 25px;
+    font-family: Saira Stencil One;
+    height: 39px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px white solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+
+.top>.right>li {
+    margin-right: 10px;
+}
+
+.left {
+    margin-left: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.right>li>i>img {
+    width: 45px;
+    height: 45px;
+    left: 958px;
+    top: 25px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    display: inline-flex
+}
+
+.right2>li>i>img {
+    width: 60px;
+    height: 60px;
+    left: 1113px;
+    top: 16px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    display: inline-flex
+}
+
+.right3>li>i>img {
+    width: 95px;
+    height: 75px;
+    left: 1013px;
+    top: 12px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    display: inline-flex
+}
+
+.text {
+    width: 959px;
+    height: 71px;
+    left: 42px;
+    top: 126px;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.alamat {
+    width: 1363px;
+    height: 400px;
+    background: rgba(173, 57, 60, 1);
+    opacity: 1;
+    position: relative;
+    top: -45px;
+    left: 0px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.alamat1 {
+    width: 436px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 208px;
+    left: 51px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 13px;
+    opacity: 1;
+    text-align: left;
+}
+
+.judul {
+    width: 959px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 126px;
+    left: 47px;
+    font-family: Saira Stencil One;
+    font-weight: Regular;
+    font-size: 31px;
+    opacity: 1;
+    text-align: left;
+}
+
+.deskripsi {
+    width: 164px;
+    height: 39px;
+    border: 1px white solid;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 375px;
+    left: 43px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.deskripsi1 {
+    width: 139px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: left;
+}
+.deskripsi2 {
+    width: 586px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 315px;
+    left: 51px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 13px;
+    opacity: 1;
+    text-align: left;
+}
+.bottom01>img{
+    width: 500px;
+    top: 250px;
+    left: 600px;
+    position: absolute;
+}
+.bottom02>img{
+    width: 400px;
+    top: 250px;
+    right: 450px;
+    position: absolute;
+}
+.bottom01,.bottom02{
+    background-color:  rgba(173, 57, 60, 1);
+    background-size: 1200px;
+}
+.alamat2 {
+    width: 626px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 208px;
+    left: 43px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+}
+.deskripsi3 {
+    width: 586px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 272px;
+    left: 55px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
+.visi-misi-sekolah{
+    background: rgba(173, 57, 61, 1);
+    padding-bottom: 15px;
+    height: 500px;
+    font-family: Saira Stencil One;
+    color: white;
+    width: 1363px;
+    margin-top: 122px;
+    margin-bottom: 122px;
+    top: 1444px;
+}
+.visi-ketua{
+    width: 350px;
+    font-size: 15px;
+    padding-top: 15px;
+    position: absolute;
+    font-family: Saira Stencil One;
+    left: 109px;
+    text-align: justify;
+    top: 1944px;
+}
+.misi--/--ketua>li/{
+    width: 550px;
+    font-size: 35px;
+    padding-top: 15px;
+    position: absolute;
+    left: 441px;
+    top: 254px;
+}
+.li01{
+    width: 350px;
+    font-size: 15px;
+    padding-top: 15px;
+    position: absolute;
+    font-family: Saira Stencil One;
+    left: 918px;
+    top: 729px;
+}
+.li02{
+    width: 350px;
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: Saira Stencil One;
+    position: absolute;
+    left: 918px;
+    top: 774px;
+}
+.li03{
+    width: 350px;
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: Saira Stencil One;
+    position: absolute;
+    left: 918px;
+    top: 820px;
+}
+.li04{
+    width: 350px;
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: Saira Stencil One;
+    position: absolute;
+    left: 918px;
+    top: 842px;
+}
+.li05{
+    width: 350px;
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: Saira Stencil One;
+    position: absolute;
+    left: 918px;
+    top: 885px;
+}
+ul>.li01,.li02,.li03,.li04,.li05{
+    list-style-type: square;
+}
+.visi01{
+    width: 90px;
+    font-size: 18px;
+    height: 12px;
+    font-family: Saira Stencil One;
+    left: 45px;
+    position: absolute;
+    top: 709px;
+}
+.misi01{
+    width: 90px;
+    font-size: 18px;
+    font-family: Saira Stencil One;
+    height: 12px;
+    right: 256px;
+    position: absolute;
+    top: 709px;
+}
+.smk-visi-misi{
+    width: 400px;
+    top: 606px;
+    font-size: 18px;
+    position: absolute;
+    right: 345px;
+}
+.visi001{
+    width: 300px;
+    position: absolute;
+    left: 45px;
+    top: 743px;
+    font-size: 14px;
+}
+.pengertian-osis{
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    color: white;
+    height: 900px;
+    width: 1366px;
+    margin-top: 120px;
+    margin-bottom: 320px;
+}
+.fungsi-judul01{
+    width: 190px;
+    position: absolute;
+    top: 615px;
+    left: 152px;
+    font-size: 25px;
+}
+.fungsi-desk02{
+    width: 397px;
+    position: absolute;
+    top: 668px;
+    left: 45px;
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+}
+.tujuan-judul03{
+    width: 190px;
+    position: absolute;
+    top: 615px;
+    right: 152px;
+    font-size: 25px;
+}
+.tujuan-desk04{
+    width: 397px;
+    position: absolute;
+    top: 668px;
+    right: 45px;
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+}
+.tugas-judul05{
+    width: 190px;
+    position: absolute;
+    top: 802px;
+    left: 152px;
+    font-size: 25px;
+}
+.tugas-desk06{
+    width: 397px;
+    position: absolute;
+    top: 868px;
+    left: 45px;
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+}
+.Kontak-osis07{
+    width: 190px;
+    position: absolute;
+    top: 802px;
+    right: 152px;
+    font-size: 25px;
+}
+.Kontak-osis08{
+    width: 397px;
+    position: absolute;
+    top: 868px;
+    right: 45px;
+    font-size: 15px;
+    justify-content: center;
+}
+.gambar-anggota-02>img{
+    width: 1080px;
+    height: 465px;
+    position: absolute;
+    left: 111px;
+    top: 1247px;
+    border-radius: 20px;
+    border: 1px black solid;
+}

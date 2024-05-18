@@ -1,0 +1,248 @@
+.gnb {
+    background: rgba(173, 57, 61, 1);
+    padding: 3px;
+    color: white;
+    height: 468px;
+    width: 1366px;
+}
+i{  
+    font-style: normal;
+}
+.top {
+    width: 100%;
+    margin: auto;
+    justify-content: flex-end;
+
+}
+
+.bottom>img {
+    width: 450px;
+    top: 80px;
+    left: 819px;
+    position: absolute;
+}
+.top>.left>li:hover {
+    border: 1px solid black;
+}
+.deskripsi:hover {
+    border: 1px solid black;
+}
+
+
+.top {
+    margin-bottom: 20px;
+}
+
+.top>.left>li:first-child {
+    margin-right: 25px;
+    cursor: pointer;
+    height: 39px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+
+.top>.left>li {
+    margin-right: 25px;
+    font-family: Saira Stencil One;
+    height: 39px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px white solid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex
+}
+
+.top>.right>li {
+    margin-right: 10px;
+}
+
+.left {
+    margin-left: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.right>li>i>img {
+    width: 45px;
+    height: 45px;
+    left: 958px;
+    top: 25px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    display: inline-flex
+}
+
+.right2>li>i>img {
+    width: 60px;
+    height: 60px;
+    left: 1113px;
+    top: 16px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    display: inline-flex
+}
+
+.right3>li>i>img {
+    width: 95px;
+    height: 75px;
+    left: 1013px;
+    top: 12px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    display: inline-flex
+}
+
+.text {
+    width: 959px;
+    height: 71px;
+    left: 42px;
+    top: 126px;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.alamat {
+    width: 1363px;
+    height: 400px;
+    background: rgba(173, 57, 60, 1);
+    opacity: 1;
+    position: relative;
+    top: -45px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.alamat1 {
+    width: 626px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 208px;
+    left: 51px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: left;
+}
+
+.judul {
+    width: 959px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 126px;
+    left: 47px;
+    font-family: Saira Stencil One;
+    font-weight: Regular;
+    font-size: 31px;
+    opacity: 1;
+    text-align: left;
+}
+
+.deskripsi {
+    width: 164px;
+    height: 39px;
+    border: 1px white solid;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 375px;
+    left: 43px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.deskripsi1 {
+    width: 139px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: left;
+}
+.deskripsi2 {
+    width: 586px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 272px;
+    left: 51px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 11px;
+    opacity: 1;
+    text-align: left;
+}
+.bottom01>img{
+    width: 500px;
+    top: 250px;
+    left: 600px;
+    position: absolute;
+}
+.bottom02>img{
+    width: 400px;
+    top: 250px;
+    right: 450px;
+    position: absolute;
+}
+.bottom01,.bottom02{
+    background-color:  rgba(173, 57, 60, 1);
+    background-size: 1200px;
+}
+.alamat2 {
+    width: 626px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 208px;
+    left: 43px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+}
+.deskripsi3 {
+    width: 586px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 272px;
+    left: 55px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}

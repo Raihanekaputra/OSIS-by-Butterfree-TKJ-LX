@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-page</title>
+        <style>
+            .mycontainer {
+                color: rgb(161, 51, 51);
+                width: 300px;
+                height: 200px;
+
+                background: url("../static/images/poto-galery1.png");
+                background-position: center;
+                background-size: cover;
+
+                border-radius: 10px;
+
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .wrap {
+                margin: auto;
+                width: 300px;
+            }
+
+            .back-button {
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="mycontainer">
+                <h1>Login Admin</h1>
+                <h5>Masukan ID and PW</h5>
+            </div>
+            <form name="login">
+                <p>ID: <input type="text" name="user" id="user" /></p>
+                <p>PW: <input type="text" name="passwd" id="passwd" /></p>
+                <button><A class="back-button" href="/beranda">Back</A> </button>
+                <button type="button" onclick="prosesLogin()">Login</button>
+            </form>
+            <script>
+                function prosesLogin() {
+                    var done = 0;
+                    var user = document.login.user.value;
+                    var pass = document.login.passwd.value;
+
+                    if (user == "admin" && pass == "12345") {
+                        window.location.href = "/admin";
+                    } else {
+                        if (done == 0) {
+                            alert("invalid login");
+                        }
+
+                    }
+
+                }
+
+            </script>
+        </div>
+    </body>
+
+</html>

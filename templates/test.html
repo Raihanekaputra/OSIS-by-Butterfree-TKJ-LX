@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <style>
+
+.mycards {
+                margin: 20px auto 0px auto;
+                width: 95%;
+                max-width: 1200px;
+            }
+            .card-img-top {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+    </style>
+</head>
+<body>
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="cards-box">
+            {%for data in galery %}
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{data.image}}" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">{{data.description}}</p>
+                       </div>
+                    
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>
